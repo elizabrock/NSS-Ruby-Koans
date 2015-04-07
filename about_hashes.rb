@@ -1,10 +1,10 @@
-require File.expand_path(File.dirname(__FILE__) + '/edgecase')
+require File.expand_path(File.dirname(__FILE__) + '/neo')
 
-class AboutHashes < EdgeCase::Koan
+class AboutHashes < Neo::Koan
   def test_creating_hashes
     empty_hash = Hash.new
     assert_equal __, empty_hash.class
-    assert_equal({}, empty_hash)
+    assert_equal(__, empty_hash)
     assert_equal __, empty_hash.size
   end
 

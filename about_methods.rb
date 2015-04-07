@@ -1,10 +1,10 @@
-require File.expand_path(File.dirname(__FILE__) + '/edgecase')
+require File.expand_path(File.dirname(__FILE__) + '/neo')
 
 def my_global_method(a,b)
   a + b
 end
 
-class AboutMethods < EdgeCase::Koan
+class AboutMethods < Neo::Koan
 
   def test_calling_global_methods
     assert_equal __, my_global_method(2,3)
@@ -30,7 +30,7 @@ class AboutMethods < EdgeCase::Koan
     #
   end
 
-  # NOTE: wrong number of argument is not a SYNTAX error, but a
+  # NOTE: wrong number of arguments is not a SYNTAX error, but a
   # runtime error.
   def test_calling_global_methods_with_wrong_number_of_arguments
     exception = assert_raise(___) do
