@@ -1,3 +1,11 @@
+= Nashville Software School, Week 1 Day 2 Exercise:
+
+  * fork the Ruby Koans repo
+  * check out your fork of the repo
+  * make some tests pass
+  * commit your changes
+  * push your changes to github
+
 = Neo Ruby Koans
 
 The Ruby Koans walk you along the path to enlightenment in order to learn Ruby.
