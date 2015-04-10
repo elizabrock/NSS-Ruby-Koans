@@ -30,7 +30,19 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 # Your goal is to write the score method.
 
 def score(dice)
-  # You need to write this method
+  sum = 0
+  sum += (dice.count(1) % 3) * 100
+  sum += (dice.count(5) % 3) * 50
+
+  if dice.count(1) >= 3
+    sum += 1000
+  end
+  (2..6).each do |i|
+    if dice.count(i) >= 3
+      sum += i * 100
+    end
+  end
+  sum
 end
 
 class AboutScoringProject < Neo::Koan
@@ -69,6 +81,7 @@ class AboutScoringProject < Neo::Koan
   def test_score_of_mixed_is_sum
     assert_equal 250, score([2,5,2,2,3])
     assert_equal 550, score([5,5,5,5])
+    assert_equal 200, score([2,2,2,2])
     assert_equal 1100, score([1,1,1,1])
     assert_equal 1200, score([1,1,1,1,1])
     assert_equal 1150, score([1,1,1,5,1])
