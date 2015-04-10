@@ -21,13 +21,17 @@ require 'about_true_and_false'
 require 'about_triangle_project'
 require 'about_exceptions'
 require 'about_triangle_project_2'
+
 require 'about_iteration'
 require 'about_blocks'
+
 require 'about_sandwich_code'
 require 'about_scoring_project'
+
 require 'about_classes'
 require 'about_open_classes'
 require 'about_dice_project'
+
 require 'about_inheritance'
 require 'about_modules'
 require 'about_scope'
